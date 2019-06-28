@@ -22,7 +22,7 @@ $appSecret = '25509283-3767-4b9e-83fe-b6e55ac6243e';
 $AccessTokenArr = ['1231312321', '123123123'];
 $clientCustomMap = ['a' => 'b', 'c' => 'd'];
 
-$push = new \VivoPush\VivoPush($appid, $appKey, $appSecret, './abc.log');
+$push = new \OppoPush\OppoPush($appid, $appKey, $appSecret, './abc.log');
 $push->setTitle($title)
     ->setcontent($message)
     ->setregId($AccessTokenArr)

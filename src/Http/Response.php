@@ -1,6 +1,6 @@
 <?php
 
-namespace VivoPush\Http;
+namespace OppoPush\Http;
 class Response
 {
     private $_statusCode;

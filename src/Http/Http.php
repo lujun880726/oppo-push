@@ -1,6 +1,6 @@
 <?php
 
-namespace VivoPush\Http;
+namespace OppoPush\Http;
 
 /**
  * @method static void setBaseUrl(string $url)

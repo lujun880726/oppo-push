@@ -6,14 +6,14 @@
  * Time: 16:59
  */
 
-namespace VivoPush;
+namespace OppoPush;
 
-use VivoPush\Http\Http;
-use VivoPush\Http\Request;
-use VivoPush\Http\Response;
+use OppoPush\Http\Http;
+use OppoPush\Http\Request;
+use OppoPush\Http\Response;
 
 
-class VivoPush
+class OppoPush
 {
 
     /**
@@ -41,7 +41,7 @@ class VivoPush
         $this->extra = [];
         $this->_http = new Request();
         $this->_http->setHttpVersion(Http::HTTP_VERSION_1_1);
-        $this->url = 'https://api-push.vivo.com.cn';
+        $this->url = 'https://api.push.oppomobile.com/';
     }
 
 
