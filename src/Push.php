@@ -76,6 +76,7 @@ class VivoPush
     {
         $this->saveListPayload();
         if (!$this->taskId) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置taskId','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置taskId");
         }
         $sendArr = [
@@ -240,30 +241,37 @@ class VivoPush
             $this->getAccessToken();
         }
         if (!$this->appId) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置appId','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置appId");
         }
         if (!$this->appKey) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置appKey','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置appKey");
         }
         if (!$this->appSecret) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置appSecret','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置appSecret");
         }
         if (!$this->AccessToken) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置AccessToken','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置AccessToken");
         }
         if (!$this->title) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置title','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置title");
         }
         if (!$this->content) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置content','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置content");
         }
         if (!$this->regId) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置regId','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置regId");
         }
         if (!$this->timeToLive) {
+            file_put_contents($this->logFile, json_encode(['errot' => 'VIVO推送必须要设置timeToLive','dateTime' => date("Y-m-d H:i:s")]) . "\r\n", FILE_APPEND);
             throw new \Exception("VIVO推送必须要设置timeToLive");
         }
-
         return $this;
     }
 
