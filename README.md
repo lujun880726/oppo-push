@@ -5,4 +5,4 @@
 php oppo push
 
 install
-require jun924670/oppo-push dev-master
+composer require jun924670/oppo-push dev-master
